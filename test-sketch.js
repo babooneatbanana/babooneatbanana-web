@@ -1,6 +1,8 @@
+var word = 'I TRIED'
 var count = 0;
 function setup() {
   createCanvas(400, 400);
+  textAlign(CENTER, CENTER);
 }
 
 function draw() {
@@ -31,6 +33,11 @@ function draw() {
     ellipse(25 + movement, movement*0.25, 50, 50);
     noStroke();
     fill(200, 84, 150)
+
+  // Text
+  fill(237, 40, 30)
+  textSize(48)
+  text(word, 200, 200)
 
   count = count + 1; 
 }
