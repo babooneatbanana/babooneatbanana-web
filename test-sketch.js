@@ -10,10 +10,15 @@ function draw() {
   var movement = count;
   var position = 
 
-  //rect 1
+
+  // Text
+  fill(237, 40, 30)
+  textSize(48)
+  text(word, 200, 200)
   rect(0 + movement*2, 50, 50, 50);
   noStroke();
   fill(0, 255, 255)
+  
   if (count > 180)
     rect(400 - movement + 180, 50, 50, 50);
     noStroke();
@@ -33,11 +38,6 @@ function draw() {
     ellipse(25 + movement, movement*0.25, 50, 50);
     noStroke();
     fill(200, 84, 150)
-
-  // Text
-  fill(237, 40, 30)
-  textSize(48)
-  text(word, 200, 200)
 
   count = count + 1; 
 }
